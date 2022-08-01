@@ -21,6 +21,7 @@ runs:
         ruby-version: ${{ inputs.ruby_version }}
         bundler-cache: true
         mingw: clang
+        setup-ruby-ref: MSP-Greg/setup-ruby@00-mswin-backslash
     - name: Bundle install
       if: inputs.ruby_version == 'skip'
       shell: bash
